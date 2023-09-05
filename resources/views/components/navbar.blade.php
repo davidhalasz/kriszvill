@@ -1,7 +1,9 @@
 <div x-data="{ open: false }" class="bg-[#232323] w-full ralewayThin font-bold">
     <nav class="relative">
-        <div class="container mx-auto flex justify-between items-center h-24 px-4">
-            <div class="text-white flex items-center">LOGO</div>
+        <div class="container mx-auto flex justify-between items-center h-28 px-4">
+            <div class="text-white flex items-center h-full">
+                <img class="h-full py-2 mt-1 scale-[1.7]" src="{{asset('logo/Logo_kriszvill.svg')}}" alt=""> 
+            </div>
             <div class="hidden lg:flex gap-8 items-center text-lg text-gray-100 ">
                 <a class="cursor-pointer hover:text-[#4DA7F7]" onclick="topFunction()">Főoldal</a>
                 <a class="cursor-pointer hover:text-[#4DA7F7]" onclick="scrollToDiv('szolgaltatasok')">Szolgáltatások</a>
