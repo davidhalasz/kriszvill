@@ -4,7 +4,7 @@
             <div class="text-white flex items-center h-full">
                 <img class="h-full py-2 mt-1 scale-[1.7]" src="{{asset('logo/Logo_kriszvill.svg')}}" alt=""> 
             </div>
-            <div class="hidden lg:flex gap-8 items-center text-lg text-gray-100 ">
+            <div class="hidden lg:flex gap-8 items-center text-lg text-gray-100 h-full">
                 <a class="cursor-pointer hover:text-[#4DA7F7]" onclick="topFunction()">Főoldal</a>
                 <a class="cursor-pointer hover:text-[#4DA7F7]" onclick="scrollToDiv('szolgaltatasok')">Szolgáltatások</a>
                 <a class="cursor-pointer hover:text-[#4DA7F7]" onclick="scrollToDiv('rolam')">Rólam mondták</a>

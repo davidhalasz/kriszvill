@@ -2,7 +2,7 @@
     <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-0 px-8 lg:px-0">
         <div class="md:col-span-2 lg:col-span-1 text-gray-100 flex justify-center items-center">
             <div class="text-white flex items-center h-44">
-                <img class="h-full py-2 scale-150" src="{{asset('logo/Logo_kriszvill.svg')}}" alt=""> 
+                <img class="h-full py-2" src="{{asset('logo/kriszvill-logo.png')}}" alt=""> 
             </div>
         </div>
 
