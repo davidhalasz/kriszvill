@@ -185,39 +185,3 @@
         </div>
     </div>
 </div>
-
-
-<script>
-    function updateDataState() {
-        // Find all elements with data-state="medium" within elements with class "mainDiv"
-        const mediumLight = document.querySelectorAll('.light-board [data-state="medium"]');
-
-        // Loop through the found elements and update the data-state attribute
-        mediumLight.forEach((element, index) => {
-            element.setAttribute('data-state', 'off');
-        });
-
-        setTimeout(() => {
-            mediumLight.forEach((element) => {
-                element.setAttribute('data-state', 'medium');
-            });
-        }, 1000);
-
-
-        const highLight = document.querySelectorAll('.light-board [data-state="high"]');
-
-        // Loop through the found elements and update the data-state attribute
-        highLight.forEach((element) => {
-            element.setAttribute('data-state', 'off');
-        });
-
-        setTimeout(() => {
-            highLight.forEach((element) => {
-                element.setAttribute('data-state', 'high');
-            });
-        }, 2000);
-    }
-
-    // Call the updateDataState function every 250 milliseconds
-    setInterval(updateDataState, 2000);
-</script>
