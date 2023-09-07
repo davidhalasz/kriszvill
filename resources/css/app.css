@@ -211,3 +211,11 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.heroheight{
+  height: calc(100vh - 112px);
+  height: -o-calc(100vh - 112px); /* opera */
+  height: -webkit-calc(100vh - 112px); /* google, safari */
+  height: -moz-calc(100vh - 112px); /* firefox */
+}
