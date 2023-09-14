@@ -18,5 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/adatkezelesi-nyilatkozat', function () {
+    return view('adatkezelesi-nyilatkozat');
+});
+
 
 Route::post('send-email', [Controller::class, 'sendEmail']);

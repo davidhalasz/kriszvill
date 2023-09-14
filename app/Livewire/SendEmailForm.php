@@ -18,6 +18,8 @@ class SendEmailForm extends Component
     public $email;
     public $phone;
     public $message;
+    public $adatkezeles;
+
     public $attachments = [];
 
     public function render()
@@ -32,6 +34,7 @@ class SendEmailForm extends Component
             'email.required' => 'Email megadása kötelező!',
             'phone.required' => 'Telefonszám megadása kötelező!',
             'message.required' => 'Üzenet megadása kötelező!',
+            'adatkezeles.required' => 'Az adatkezelési nyilatkozat elfogadása kötelező!',
         ];
 
         $validatedData = Validator::make([
@@ -40,12 +43,14 @@ class SendEmailForm extends Component
             'phone' => $this->phone,
             'message' => $this->message,
             'attachments' => $this->attachments,
+            'adatkezeles' => $this->adatkezeles,
         ], [
             'name' => 'required|string|max:255',
             'email' => 'required|string|max:255|email',
             'phone' => 'required|string|max:255',
             'message' => 'required|string',
             'attachments.*' => 'file|mimes:pdf,jpg,jpeg,png|max:2048',
+            'adatkezeles' => 'required',
         ], $errorMessages)->validate();
 
         $email = new SendEmail($validatedData);
@@ -59,10 +64,9 @@ class SendEmailForm extends Component
             }
         }
         
-        Mail::to('1mrwoof@gmail.com')->send($email);
-
-        session()->flash('success', 'Üzenet sikeresen elküldve!');
+        Mail::to('info@krisz-vill.hu')->send($email);
         $this->reset();
+        session()->flash('success', 'Üzenet sikeresen elküldve!');
     }
 }
 

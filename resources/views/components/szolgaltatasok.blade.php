@@ -53,23 +53,26 @@
             <div class="md:basis-3/6 lg:basis-2/6">
                 <img src="{{ asset('images/hun.png') }}" alt="" class="w-full object-contain">
             </div>
-            <div class="mt-4 md:mt-0 md:basis-2/6 lg:basis-1/6 pl-8 flex flex-col">
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#4DA7F7" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <p class="text-gray-100 font-bold text-lg">Budapest</p>
+            <div class="mt-4 md:mt-0 md:basis-2/6 lg:basis-1/6 flex flex-col">
+                <div class="my-auto mx-auto">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="#4DA7F7" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <p class="text-gray-100 font-bold text-lg">Budapest</p>
+                    </div>
+                    <div class="flex items-center gap-2 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="#4DA7F7" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <p class="text-gray-100 font-bold text-lg">Pest vármegye</p>
+                    </div>
                 </div>
-                <div class="flex items-center gap-2 mt-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#4DA7F7" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <p class="text-gray-100 font-bold text-lg">Pest vármegye</p>
-                </div>
+
             </div>
         </div>
         <div class="pt-16 pb-10 relative flex justify-center items-center">
@@ -180,8 +183,7 @@
                 </div>
             </div>
             <button onclick="scrollToDiv('ajanlatkeres')"
-                class="absolute mt-4 bg-[#4DA7F7] px-4 py-1 rounded-sm text-xl shadow-md transition duration-150 ease-in-out hover:scale-110">Érdekel a
-                szolgáltatás</button>
+                class="absolute mt-4 bg-[#4DA7F7] px-4 py-2 rounded-sm text-xl shadow-md transition duration-150 ease-in-out hover:scale-110 font-bold hover:text-white">ÉRDEKEL A SZOLGÁLTATÁS</button>
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<section class="relative z-10 overflow-hidden py-20 lg:py-[120px]">
+<section class="relative z-10 overflow-hidden py-20 lg:py-[120px]" id="ajanlatkeres">
     <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap lg:justify-between">
             <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -12,12 +12,13 @@
                     </h2>
                     <p class="mb-9 text-base leading-relaxed text-body-color text-gray-100">
                         Villanyszerelés, korszerűsítés, gyorsszervíz a hét minden napján.</br></br>
-                        Keressen fel az alábbi elérhetőségek egyikén vagy töltse ki az ajánlatkérő űrlapot és
+                        Keressen fel az alábbi elérhetőségek egyikén, vagy töltse ki az ajánlatkérő űrlapot és
                         hamarosan felveszem Önnel
                         a kapcsolatot.
                     </p>
 
-                    <div class="mb-8 flex w-full max-w-[370px]">
+
+                    <div class="mb-8 flex items-center w-full max-w-[370px]">
                         <div
                             class="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-gray-100 bg-opacity-5 text-[#4DA7F7] sm:h-[70px] sm:max-w-[70px]">
                             <svg width="24" height="26" viewBox="0 0 24 26" class="fill-current">
@@ -34,11 +35,11 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mb-1 text-xl font-bold text-[#4DA7F7]">Telefonszám</h4>
-                            <p class="font-sans font-normal text-gray-100">+36 70 221 0396</p>
+                            <a class="font-sans font-normal text-gray-100" href="tel:+36702210396">+36 70 221 0396</a>
                         </div>
                     </div>
 
-                    <div class="mb-8 flex w-full max-w-[370px]">
+                    <div class="mb-8 flex items-center w-full max-w-[370px]">
                         <div
                             class="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-gray-100 bg-opacity-5 text-[#4DA7F7] sm:h-[70px] sm:max-w-[70px]">
                             <svg width="28" height="19" viewBox="0 0 28 19" class="fill-current">
@@ -51,7 +52,22 @@
                             <h4 class="mb-1 text-xl font-bold text-[#4DA7F7]">
                                 Email cím
                             </h4>
-                            <p class="text-base text-gray-100">info@krisz-vill.hu</p>
+                            <a class="text-base text-gray-100" href="mailto:info@krisz-vill.hu">info@krisz-vill.hu</a>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 flex items-center w-full max-w-[370px]">
+                        <div
+                            class="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-gray-100 bg-opacity-5 text-[#4DA7F7] sm:h-[70px] sm:max-w-[70px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+                        </div>
+                        <div class="w-full">
+                            <a href="/adatkezelesi-nyilatkozat" class="font-bold text-[#4DA7F7]">Adatkezelési
+                                nyilatkozat</a>
                         </div>
                     </div>
                 </div>
@@ -96,9 +112,20 @@
                                 stb. Elfogadott formátumok: jpg, jpeg, png, pdf
                             </p>
                         </div>
+                        <div class="mb-6">
+                            @error('adatkezeles')
+                                <span class="text-red-500 font-bold">{{ $message }}</span>
+                            @enderror
+                            <div class="flex">
+                          <input type="checkbox" wire:click="$set('adatkezeles',{{ $adatkezeles ? 'false' : 'true' }})" value="false">
+                            <label for="adatkezeles" class="text-gray-200 ml-1"> Elfogadom az adatkezelési
+                                nyilatkozatot<span class="text-xl font-bold text-red-500">*</span></label><br>
+                            </div>
+  
+                        </div>
                         <div>
                             <button type="submit"
-                                class="bg-[#4DA7F7] w-full rounded  p-3 text-white transition hover:bg-opacity-90">
+                                class="bg-[#4DA7F7] w-full rounded  p-3 text-white transition hover:bg-opacity-90 font-bold">
                                 Üzenet küldése
                             </button>
                         </div>
