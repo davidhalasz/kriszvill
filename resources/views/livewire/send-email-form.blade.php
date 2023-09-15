@@ -74,37 +74,37 @@
             </div>
             <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                 <div class="relative rounded-lg bg-[#4B4D4F] p-8 shadow-2xl sm:p-12">
-                    <form wire:submit.prevent="submit" enctype="multipart/form-data">
+                    <form enctype="multipart/form-data" wire:key="foo">
                         <div class="mb-6">
                             @error('name')
                                 <span class="text-red-500 font-bold">{{ $message }}</span>
                             @enderror
-                            <input type="text" placeholder="Név*" wire:model="name"
+                            <input type="text" placeholder="Név*" wire:model="name" id="name"
                                 class="w-full rounded border border-[#f0f0f0] py-3 px-[14px] text-base text-body-color outline-none focus:border-gray-100 focus-visible:shadow-none">
                         </div>
                         <div class="mb-6">
                             @error('email')
                                 <span class="text-red-500 font-bold">{{ $message }}</span>
                             @enderror
-                            <input type="email" placeholder="Email*" wire:model="email"
+                            <input type="email" placeholder="Email*" wire:model="email" id="email"
                                 class="w-full rounded border border-[#f0f0f0] py-3 px-[14px] text-base text-body-color outline-none focus:border-gray-100 focus-visible:shadow-none">
                         </div>
                         <div class="mb-6">
                             @error('phone')
                                 <span class="text-red-500 font-bold">{{ $message }}</span>
                             @enderror
-                            <input type="text" placeholder="Telefonszám*" wire:model="phone"
+                            <input type="text" placeholder="Telefonszám*" wire:model="phone" id="phone"
                                 class="w-full rounded border border-[#f0f0f0] py-3 px-[14px] text-base text-body-color outline-none focus:border-gray-100 focus-visible:shadow-none">
                         </div>
                         <div class="mb-6">
                             @error('message')
                                 <span class="text-red-500 font-bold">{{ $message }}</span>
                             @enderror
-                            <textarea rows="5" placeholder="Üzenet*" wire:model="message"
+                            <textarea rows="5" placeholder="Üzenet*" wire:model="message" id="message"
                                 class="w-full resize-none rounded border border-[#f0f0f0] py-3 px-[14px] text-base text-body-color outline-none focus:border-gray-100 focus-visible:shadow-none"></textarea>
                         </div>
                         <div class="mb-6">
-                            <input wire:model="attachments" multiple accept="image/*,.pdf"
+                            <input wire:model="attachments" multiple accept="image/*,.pdf" id="attachments"
                                 class="custom-file-input w-full bg-gray-100 text-gray-900 p-2 rounded-sm focus:outline-none focus:shadow-outline"
                                 type="file" />
                             <p class="text-gray-200 mt-1 text-sm">Adott munka jellegéről, pl. konyha, alaprajz,
@@ -117,14 +117,16 @@
                                 <span class="text-red-500 font-bold">{{ $message }}</span>
                             @enderror
                             <div class="flex">
-                          <input type="checkbox" wire:click="$set('adatkezeles',{{ $adatkezeles ? 'false' : 'true' }})" value="false">
-                            <label for="adatkezeles" class="text-gray-200 ml-1"> Elfogadom az adatkezelési
-                                nyilatkozatot<span class="text-xl font-bold text-red-500">*</span></label><br>
+                                <input type="checkbox" id="adatkezeles"
+                                    wire:click="$set('adatkezeles',{{ $adatkezeles ? 'false' : 'true' }})"
+                                    value="false" />
+                                <label for="adatkezeles" class="text-gray-200 ml-1"> Elfogadom az adatkezelési
+                                    nyilatkozatot<span class="text-xl font-bold text-red-500">*</span></label><br>
                             </div>
-  
+
                         </div>
                         <div>
-                            <button type="submit"
+                            <button type="button" wire:click="submit"
                                 class="bg-[#4DA7F7] w-full rounded  p-3 text-white transition hover:bg-opacity-90 font-bold">
                                 Üzenet küldése
                             </button>
@@ -400,4 +402,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('reset-form', event => {
+            var inputName = document.getElementById('name');
+            var inputPhone = document.getElementById('phone');
+            var inputEmail = document.getElementById('email');
+            var inputMessage = document.getElementById('message');
+            var inputAttachments = document.getElementById('attachments');
+            var inputAdatkezeles = document.getElementById('adatkezeles');
+
+            console.log(event);
+
+            inputName.value = event.detail.name;
+            inputPhone.value = event.detail.phone;
+            inputEmail.value = event.detail.email;
+            inputMessage.value = event.detail.message;
+            inputAttachments.value = event.detail.attachments;
+            inputAdatkezeles.checked = false;
+        });
+    </script>
 </section>
