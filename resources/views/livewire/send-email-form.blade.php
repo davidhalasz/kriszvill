@@ -412,8 +412,6 @@
             var inputAttachments = document.getElementById('attachments');
             var inputAdatkezeles = document.getElementById('adatkezeles');
 
-            console.log(event);
-
             inputName.value = event.detail.name;
             inputPhone.value = event.detail.phone;
             inputEmail.value = event.detail.email;

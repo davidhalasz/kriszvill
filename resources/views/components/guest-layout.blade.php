@@ -8,15 +8,18 @@
     <title>KRISZVILL</title>
     <link rel="icon" href="{{ url('logo/kriszvill-logo.png') }}">
 
-    @livewireStyles
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- Styles -->
+    
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @livewireScripts
+    
+    <!-- 
+    <link rel="stylesheet" href="/build/assets/app-29efc18b.css">
+    <script src="/build/assets/app-6e0eadfb.js" defer></script>
+    -->
 </head>
 
 <body class="antialiased bg-[#4B4D4F] raleway">
