@@ -1,5 +1,72 @@
-<div class="szolgaltatasok bg-[#191918] py-20" id="szolgaltatasok">
-    <p class="text-center font-bold text-gray-400 mb-4">Miben tudok segíteni Önnek?</p>
+<div class="szolgaltatasok bg-[#191918] py-20">
+<section class="container mx-auto px-4 py-12 space-y-8 text-white">
+         <h2 class="ralewayBold tracking-wide text-xl md:text-2xl text-center mt-4 text-[#4DA7F7] pb-8">KriszVill – Teljeskörű villanyszerelés, korszerűsítés, hibaelhárítás akár 1-2 órán belüli kiszállással</h2>
+    <div class="text-lg">
+      <p class="mt-4">Több mint 20 éves szakmai tapasztalattal vállalom új építésű ingatlanok teljes körű villamoshálózatának kiépítését, régi lakások és családi házak elektromos rendszerének korszerűsítését, valamint sürgős hibák szakszerű elhárítását.</p>
+      <p class="mt-4 font-semibold">Átlátható árajánlat, korrekt hozzáállás és garantált minőség – a KriszVillnél alapvetés a megbízhatóság és a precíz munkavégzés, hiszen az otthon biztonsága az elektromos rendszernél kezdődik.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 py-8">
+      <div class="bg-gray-800 shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Új otthont épít, vagy felújítás előtt áll?</h3>
+        <p>Teljes körű villanyszerelési munkákat vállalok az alapvezetékek kiépítésétől egészen a konnektorok, kapcsolók és világítótestek precíz felszereléséig. A munkát minden esetben személyes helyszíni felmérés előzi meg.</p>
+      </div>
+      <div class="bg-gray-800 shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Elavult a hálózat? Rendszeresen lecsap a biztosíték?</h3>
+        <p>A korszerűsítési munkák során a régi, túlterhelt, vagy hibás hálózatokat biztonságos, mai szabványoknak megfelelő rendszerré alakítom.</p>
+      </div>
+      <div class="bg-gray-800 shadow-md rounded-xl p-6">
+        <h3 class="text-xl font-bold mb-2">Elment az áram? Ég a biztosíték?</h3>
+        <p>Sürgős hibaelhárítás Budapesten 1-2 órán belüli kiszállással. A legtöbb problémát helyben, gyorsan megoldom.</p>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Miben tudok segíteni?</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Új villamos hálózat kialakítása családi házakban és lakásokban</li>
+        <li>Hálózat korszerűsítése és biztonságos felújítása elavult rendszerek esetén</li>
+        <li>Szerelvények beépítése, cseréje: lámpák, kapcsolók, dugaljak szakszerű felszerelése</li>
+        <li>Gyors és hatékony hibaelhárítás 1-2 órán belüli kiszállással</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold mt-8 mb-4">Miért válasszon engem?</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Több mint 20 év szakmai tapasztalat és folyamatos továbbképzés</li>
+        <li>Modern technológiák és magas minőségű anyagok</li>
+        <li>Tételes, előre egyeztetett árajánlat</li>
+        <li>Akár 1-2 órán belüli kiszállás hibaelhárítás esetén</li>
+        <li>100% garancia a munkára és az anyagokra</li>
+        <li>Tisztaságot hagyok magam után minden munka után</li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl mt-8">
+      <h2 class="text-2xl font-bold mb-4">Hogyan zajlik a közös munka?</h2>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Kapcsolatfelvétel – telefonon egyeztetünk</li>
+        <li>Helyszíni felmérés – személyesen mérem fel az állapotot</li>
+        <li>Tételes árajánlat – írásban, telefonos egyeztetéssel</li>
+        <li>Anyagbeszerzés – minőségi eszközök használata</li>
+        <li>Kivitelezés – határidőre, precízen, tisztán</li>
+      </ol>
+    </div>
+
+    <div class="text-center mt-12 py-20">
+      <p class="text-xl font-semibold">Vegye fel velem a kapcsolatot még ma, és bízza profira otthona elektromos rendszerét!</p>
+      <p class="mt-2 text-2xl font-bold text-yellow-400">
+        <a href="tel:+36702210396" class="hover:underline">+36 70 221 0396</a>
+      </p>
+      <div class="mt-4 space-x-4">
+        <a href="#szolgaltatasok" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-yellow-600">Szolgáltatások</a>
+        <a href="#ajanlatkeres" class="inline-block bg-gray-700 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-600">Kapcsolatfelvétel</a>
+      </div>
+    </div>
+  </section>
+
+    <p class="text-center font-bold text-gray-400 mb-4" id="szolgaltatasok">Miben tudok segíteni Önnek?</p>
     <div class="text-2xl md:text-3xl font-bold text-center mb-20">
         <span class="bg-clip-text raleway text-transparent bg-gradient-to-r from-[#4DA7F7] to-[#4DA7F7]">
             SZOLGÁLTATÁSOK

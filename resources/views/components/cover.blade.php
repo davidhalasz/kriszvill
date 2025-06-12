@@ -5,7 +5,7 @@
             <div class="text-white flex items-center h-64 ">
                 <img class="h-full py-2" src="{{asset('logo/kriszvill-logo.png')}}" alt=""> 
             </div>
-            <h1 class="ralewayBold tracking-wide text-xl md:text-3xl text-center mt-4 text-[#4DA7F7]">TELJESKÖRŰ VILLANYSZERELÉS</h1>
+            <h1 class="ralewayBold tracking-wide text-xl md:text-4xl text-center mt-4 text-[#4DA7F7]">Villanyszerelés Budapesten – Gyors, biztonságos, megbízható megoldások 20 év tapasztalattal</h1>
         </div>
     </div>
 </div>
