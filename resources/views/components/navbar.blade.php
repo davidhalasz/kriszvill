@@ -7,7 +7,7 @@
                 </div>
             </a>
 
-            <div class="hidden lg:flex gap-8 items-center text-lg text-gray-100 h-full">
+            <div class="hidden lg:flex gap-8 items-center text-lg text-gray-100 h-full ">
                 <a class="cursor-pointer hover:text-[#4DA7F7]" href="/">Főoldal</a>
                 <a class="cursor-pointer hover:text-[#4DA7F7]"
                     onclick="scrollToDiv('szolgaltatasok')">Szolgáltatások</a>
@@ -21,12 +21,12 @@
 
             <!-- Hamburger button -->
             <div class="flex lg:hidden">
-                <button @click="open = !open" class="text-gray-600 hover:text-gray-600 focus:outline-none">
-                    <svg x-show="!open" class="text-gray-600 h-6 w-6" viewBox="0 0 24 24">
+                <button @click="open = !open" class="text-gray-100 hover:text-gray-100 focus:outline-none">
+                    <svg x-show="!open" class="text-gray-100 h-10 w-10" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
                     </svg>
                     <svg x-show="open" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
 
@@ -38,7 +38,7 @@
             x-transition:leave="transform ease-in duration-300 transition"
             x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-[-20px]"
             class="lg:hidden absolute z-10 -mt-2 text-gray-100 pl-8 w-full bg-[#232323]">
-            <div class="container mx-auto flex flex-col gap-2">
+            <div class="container mx-auto flex flex-col gap-2 pt-8">
                 <a class="block cursor-pointer hover:text-[#4DA7F7]" onclick="topFunction()">Főoldal</a>
                 <a class="block cursor-pointer hover:text-[#4DA7F7]"
                     onclick="scrollToDiv('szolgaltatasok')">Szolgáltatások</a>

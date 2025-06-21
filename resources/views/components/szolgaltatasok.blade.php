@@ -1,23 +1,82 @@
-<div class="szolgaltatasok bg-[#191918] py-20">
+<div class="szolgaltatasok bg-[#191918] ">
 <section class="container mx-auto px-4 py-12 space-y-8 text-white">
-         <h2 class="ralewayBold tracking-wide text-xl md:text-2xl text-center mt-4 text-[#4DA7F7] pb-8">KriszVill – Teljeskörű villanyszerelés, korszerűsítés, hibaelhárítás akár 1-2 órán belüli kiszállással</h2>
-    <div class="text-lg">
-      <p class="mt-4">Több mint 20 éves szakmai tapasztalattal vállalom új építésű ingatlanok teljes körű villamoshálózatának kiépítését, régi lakások és családi házak elektromos rendszerének korszerűsítését, valamint sürgős hibák szakszerű elhárítását.</p>
-      <p class="mt-4 font-semibold">Átlátható árajánlat, korrekt hozzáállás és garantált minőség – a KriszVillnél alapvetés a megbízhatóság és a precíz munkavégzés, hiszen az otthon biztonsága az elektromos rendszernél kezdődik.</p>
-    </div>
+  <div class="flex flex-wrap
+         justify-center items-center text-center">
 
-    <div class="grid md:grid-cols-3 gap-6 py-8">
-      <div class="bg-gray-800 shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Új otthont épít, vagy felújítás előtt áll?</h3>
-        <p>Teljes körű villanyszerelési munkákat vállalok az alapvezetékek kiépítésétől egészen a konnektorok, kapcsolók és világítótestek precíz felszereléséig. A munkát minden esetben személyes helyszíni felmérés előzi meg.</p>
+         <div class="w-full md:w-1/2">
+                     <h2 class="ralewayBold tracking-wide text-xl md:text-3xl text-center mt-4 text-[#4DA7F7] pb-8">KriszVill – Teljeskörű villanyszerelés, korszerűsítés, hibaelhárítás akár 1-2 órán belüli kiszállással</h2>
+                         <p class="mt-4 text-lg">Több mint 20 éves szakmai tapasztalattal vállalom új építésű ingatlanok teljes körű villamoshálózatának kiépítését, régi lakások és családi házak elektromos rendszerének korszerűsítését, valamint sürgős hibák szakszerű elhárítását.</p>
+                                   <div class="py-8 flex items-center justify-center mt-auto">
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="#ajanlatkeres" class=" bg-yellow-500 px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-yellow-600 transition duration-300">Ajánlatkérés</a>
+            </div>
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="tel:+36702210396" class="bg-[#4DA7F7] px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-[#3a8bbf] transition duration-300 ml-4">Hívjon most</a>
+            </div>
+          </div>
+         </div>
+          <div class="w-full md:w-1/2 p-20">
+            <img src="{{ asset('images/krisz-vill-szolgaltatas.jpg') }}" alt="KriszVill szolgáltatás" class="mx-auto w-auto rounded-tl-3xl rounded-br-3xl">
+         </div>
+  </div>
+</section >
+    <div class="text-xl bg-[#4DA7F7] py-14 text-center">
+      <p class="mt-4 font-semibold text-white container mx-auto px-2">Átlátható árajánlat, korrekt hozzáállás és garantált minőség – a KriszVillnél alapvetés a megbízhatóság és a precíz munkavégzés, hiszen az otthon biztonsága az elektromos rendszernél kezdődik.</p>
+    </div>
+<section class="container mx-auto px-4 pt-24 pb-12 space-y-8 text-white">
+    <div class="grid md:grid-cols-3 gap-6 ">
+      <div class="bg-gray-800 shadow-md rounded-xl overflow-hidden flex flex-col h-full">
+        <div class="max-h-64 w-full overflow-hidden"> 
+          <img class="overflow-hidden inline-block object-cover bg-bottom" src="{{ asset('images/uj-haz-epitese-villanyszerelese.jpg') }}" alt="új épülő ingatlanok villanyszerelése" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold mb-3">Új otthont épít, vagy felújítás előtt áll?</h3>
+          <p class="mb-6">Teljes körű villanyszerelési munkákat vállalok az alapvezetékek kiépítésétől egészen a konnektorok, kapcsolók és világítótestek precíz felszereléséig. A munkát minden esetben személyes helyszíni felmérés előzi meg.</p>
+          <div class="my-4 flex items-center justify-center mt-auto">
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="#ajanlatkeres" class=" bg-yellow-500 px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-yellow-600 transition duration-300">Ajánlatkérés</a>
+            </div>
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="tel:+36702210396" class="bg-[#4DA7F7] px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-[#3a8bbf] transition duration-300 ml-4">Hívjon most</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-800 shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Elavult a hálózat? Rendszeresen lecsap a biztosíték?</h3>
-        <p>A korszerűsítési munkák során a régi, túlterhelt, vagy hibás hálózatokat biztonságos, mai szabványoknak megfelelő rendszerré alakítom.</p>
+
+      <div class="bg-gray-800 shadow-md rounded-xl overflow-hidden flex flex-col h-full">
+        <div class="max-h-64 w-full overflow-hidden"> 
+          <img class="overflow-hidden inline-block object-cover bg-bottom" src="{{ asset('images/meglevo elektromos rendszer cserje.jpg') }}" alt="elavult villanyvezetékek és rendszer cseréje" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold mb-3">Elavult a hálózat? Rendszeresen lecsap a biztosíték?</h3>
+          <p class="mb-6">A korszerűsítési munkák során a régi, túlterhelt, vagy hibás hálózatokat biztonságos, mai szabványoknak megfelelő rendszerré alakítom.</p>
+          <div class="my-4 flex items-center justify-center mt-auto">
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="#ajanlatkeres" class=" bg-yellow-500 px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-yellow-600 transition duration-300">Ajánlatkérés</a>
+            </div>
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="tel:+36702210396" class="bg-[#4DA7F7] px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-[#3a8bbf] transition duration-300 ml-4">Hívjon most</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-800 shadow-md rounded-xl p-6">
-        <h3 class="text-xl font-bold mb-2">Elment az áram? Ég a biztosíték?</h3>
-        <p>Sürgős hibaelhárítás Budapesten 1-2 órán belüli kiszállással. A legtöbb problémát helyben, gyorsan megoldom.</p>
+
+      <div class="bg-gray-800 shadow-md rounded-xl overflow-hidden flex flex-col h-full">
+        <div class="max-h-64 w-full overflow-hidden"> 
+          <img class="overflow-hidden inline-block object-cover bg-bottom" src="{{ asset('images/sos villanyszereles budapesten.jpg') }}" alt="SOS villanyszerelés Budapesten olcsó gyors kiszállás" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-2xl font-bold mb-3">Elment az áram? Ég a biztosíték?</h3>
+          <p class="mb-6">Sürgős hibaelhárítás Budapesten 1-2 órán belüli kiszállással. A legtöbb problémát helyben, gyorsan megoldom.</p>
+          <div class="my-4 flex items-center justify-center mt-auto">
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="#ajanlatkeres" class=" bg-yellow-500 px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-yellow-600 transition duration-300">Ajánlatkérés</a>
+            </div>
+            <div class="w-1/2 items-center justify-center flex">
+              <a href="tel:+36702210396" class="bg-[#4DA7F7] px-6 py-3 rounded-md font-sans font-normal text-white hover:bg-[#3a8bbf] transition duration-300 ml-4">Hívjon most</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -55,11 +114,11 @@
     </div>
 
     <div class="text-center mt-12 py-20">
-      <p class="text-xl font-semibold">Vegye fel velem a kapcsolatot még ma, és bízza profira otthona elektromos rendszerét!</p>
+      <p class="text-2xl font-bold">Vegye fel velem a kapcsolatot még ma, és bízza profira otthona elektromos rendszerét!</p>
       <p class="mt-2 text-2xl font-bold text-yellow-400">
         <a href="tel:+36702210396" class="hover:underline">+36 70 221 0396</a>
       </p>
-      <div class="mt-4 space-x-4">
+      <div class="mt-4 space-x-4 flex justify-center">
         <a href="#szolgaltatasok" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-yellow-600">Szolgáltatások</a>
         <a href="#ajanlatkeres" class="inline-block bg-gray-700 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-600">Kapcsolatfelvétel</a>
       </div>
@@ -76,8 +135,8 @@
         <div class="card">
             <div class="w-full h-full p-4 content bg-gradient-to-b from-[#232323] to-[#121212]">
                 <img src="{{ asset('icons/villyankorte.svg') }}" alt="" class="h-14 w-14 mb-4">
-                <h2 class="text-gray-100 text-lg font-bold mb-2">Lakossági villanyszerelés</h2>
-                <p class="text-zinc-300">Meglévő lakóingatlan (családi ház, lakás, panel) villamoshálózatának
+                <h2 class="text-gray-100 text-2xl font-bold mb-2">Lakossági villanyszerelés</h2>
+                <p class="text-white">Meglévő lakóingatlan (családi ház, lakás, panel) villamoshálózatának
                     korszerűsítése, új építésű lakóingatlanok teljes körű villanyszerelése
                 </p>
             </div>
@@ -85,24 +144,24 @@
         <div class="card">
             <div class="w-full h-full p-4 content bg-gradient-to-b from-[#232323] to-[#121212]">
                 <img src="{{ asset('icons/villanyhalozat.svg') }}" alt="" class="h-14 w-14 mb-4">
-                <h2 class="text-gray-100 text-lg font-bold mb-2">Ipari villanyszerelés</h2>
-                <p class="text-zinc-300">ipari létesítmények, iroda épületek, üzletek, vendéglátóegységek teljes körű
+                <h2 class="text-gray-100 text-2xl font-bold mb-2">Ipari villanyszerelés</h2>
+                <p class="text-white">ipari létesítmények, iroda épületek, üzletek, vendéglátóegységek teljes körű
                     villanyszerelése</p>
             </div>
         </div>
         <div class="card">
             <div class="w-full h-full p-4 content bg-gradient-to-b from-[#232323] to-[#121212]">
                 <img src="{{ asset('icons/hosszabbito.svg') }}" alt="" class="h-14 w-14 mb-4">
-                <h2 class="text-gray-100 text-lg font-bold mb-2">Strukturált hálózatok kiépítése</h2>
-                <p class="text-zinc-300"> (pl. számítógépes végpontok, csatlakozók)
+                <h2 class="text-gray-100 text-2xl font-bold mb-2">Strukturált hálózatok kiépítése</h2>
+                <p class="text-white"> (pl. számítógépes végpontok, csatlakozók)
                 </p>
             </div>
         </div>
         <div class="card">
             <div class="w-full h-full p-4 content bg-gradient-to-b from-[#232323] to-[#121212]">
                 <img src="{{ asset('icons/villyanszereles.svg') }}" alt="" class="h-14 w-14 mb-4">
-                <h2 class="text-gray-100 text-lg font-bold mb-2">Gyorsszervíz</h2>
-                <p class="text-zinc-300"> A hét minden napján, rövid kiszállási idővel (hibakeresés, sütő-főzőlap,
+                <h2 class="text-gray-100 text-2xl font-bold mb-2">Gyorsszervíz</h2>
+                <p class="text-white"> A hét minden napján, rövid kiszállási idővel (hibakeresés, sütő-főzőlap,
                     bojler beüzemelés)
 
                 </p>

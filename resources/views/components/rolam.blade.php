@@ -7,7 +7,7 @@
                 </span>
             </div>
             
-            <div class="md:w-2/3 lg:w-1/2 flex flex-row gap-4 justify-center text-white">
+            <div class="md:w-2/3 lg:w-1/2 flex ij flex-row gap-4 justify-center text-white">
                 <div class="flex flex-col text-center w-[300px]">
                     <div class="w-full flex justify-center">
                         <img src="{{ asset('icons/szerelo.svg') }}" alt="" class="h-20 w-20 mb-4">
